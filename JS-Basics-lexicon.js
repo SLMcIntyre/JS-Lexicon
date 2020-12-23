@@ -193,3 +193,74 @@ console.log("Great Job! You scored "+(playerscore)+" points.");
 // we can insert, or interpolate, variables into strings using template literals. A template literal is wrapped by backticks with the variable wrapped in curly brackets `${()}`
 let playerscore2 = 65;
 console.log(`Great Job! You scored ${(playerscore2)} points.`);
+
+
+
+
+//Conditional Statements: A conditional statement checks a specific condition(s) and performs a task based on the condition(s).
+
+// 1. An if statement checks a condition and will execute a task if that condition evaluates to true.
+let isRaining = true;
+if(isRaining === true){
+    console.log("Bring an umbrella!");
+}
+
+
+// 2. if...else statements make binary decisions and execute different code blocks based on a provided condition.
+let stormClouds = false;
+if(stormClouds === true){
+    console.log("Bring an umbrella!");
+}else{
+    console.log("The sun is shining!");
+}
+
+
+// 3. We can add more conditions using else if statements. The else if statement allows for more than two possible outcomes. 
+let weather = "foggy";
+if(weather === "stormy"){
+    console.log("Bring an umbrella");
+}else if (weather === "foggy"){
+    console.log("Visibility is poor. Be careful driving!");
+}else {
+    console.log("The sun is shining!");
+}
+
+
+// 4. Comparison operators, including <, >, <=, >=, ===, and !== can compare two values.
+// Less than:<
+if (2<10){
+    console.log("true");
+}
+
+// Greater than: >
+if (55>20){
+    console.log("true");
+}
+
+// Less than or equal to: <=
+if (10<=60){
+    console.log("true");
+}
+
+// Greater than or equal to: >=
+if (10>=5){
+    console.log("true");
+}
+
+// Is equal to: === (Note "=" is for assigning values; "==" is loosely equal to; "===" is strictly equal to) Identity Operator
+let numOfApples = 10;
+let numOfOranges = (7+3);
+console.log(numOfApples===numOfOranges);
+
+
+// Is not equal to: !==
+numOfApples = 20;
+numOfOranges = (7+3);
+console.log(numOfApples!==numOfOranges);
+
+
+// 5. The logical and operator, &&, or “and”, checks if both provided expressions are truthy.
+// 6. The logical operator ||, or “or”, checks if either provided expression is truthy.
+// 7. The bang operator, !, switches the truthiness and falsiness of a value.
+// 8. The ternary operator is shorthand to simplify concise if...else statements.
+// 9. A switch statement can be used to simplify the process of writing multiple else if statements. The break keyword stops the remaining cases from being checked and executed in a switch statement.

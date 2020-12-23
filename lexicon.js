@@ -43,7 +43,6 @@ console.log(`In JavaScript, the data type of null is listed as an ${typeof (pers
 
 
 
-
 //  5. Undefined: This data type is denoted by the keyword undefined (without quotes). It also represents the absence of a value though it has a different use than null.
 let value;
 console.log(value);
@@ -59,7 +58,7 @@ console.log(`sym Data Type is ${typeof (sym)}`);
 let dogInfo = {
     Name: "Diogi", 
     Breed: "NewFoundland",
-    Age: 2+"years",
+    Age: 2+" years",
     Gender: "Male"
 }
 
@@ -90,3 +89,83 @@ console.log(`The quotient of 10 divided by 5 is ${(quotient)}.`);
 // The remainder operator, sometimes called modulo, returns the number that remains after the right-hand number divides into the left-hand number as many times as it evenly can: 11 % 3 equals 2 because 3 fits into 11 three times, leaving 2 as the remainder.
 let modulo = 11%3;
 console.log(`The remainder of 11 modulo 3 is ${(modulo)}.`);
+
+
+
+//OutPut
+// JavaScript can "display" data in different ways:
+
+// 1. Writing into an HTML element, using innerHTML.
+// It is not advised to use innerHTML in JavaScript because innerHTML content is refreshed every time and thus is slower. There is no scope for validation in innerHTML and, therefore, it is easier to insert rogue code in the document and, thus, make the web page unstable.
+
+
+// 2. Writing into the HTML output using document.write().
+
+
+// 3. Writing into an alert box, using window.alert().
+alert("Hello World!");
+
+// 4. Writing into the browser console, using console.log().
+console.log("The sky is blue");
+
+
+
+/*
+Comments
+As we write JavaScript, we can write comments in our code that the computer will ignore as our program runs.
+ There are two types of code comments in JavaScript:
+*/
+
+// 1. A single line comment will comment out a single line and is denoted with two forward slashes "//" preceding it or can be used to comment after the line of code.
+
+//********** Example of a Single Line Comment*****************
+
+
+// 2. A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.
+
+/*
+
+*****This is an example of a***** 
+*****multi-line comment.***** 
+*****This will not run.*****
+
+*/
+//You can also comment something out in the middle of a line of code:
+
+console.log("Age:"+/*DON'T PRINT THIS!*/ 8); 
+
+
+
+// Variables: a variable is a container for a value.  They label and store data in memory. There are only a few things you can do with variables:
+
+// Create a variable with a descriptive name.
+// Store or update information stored in a variable.
+// Reference or “get” information stored in a variable.
+
+// 1. var: short for variable, is a JavaScript keyword that creates, or declares, a new variable. The use of var is no longer recommended.
+var dogName = "Tilly";
+console.log(`The dog's name is ${(dogName)}.`);
+
+// // 2. Const: the const keyword was also introduced in ES6, and is short for the word constant. Just like with var and let you can store any value in a const variable.
+// a const variable cannot be reassigned because it is constant. If you try to reassign a const variable, you’ll get a TypeError.
+// Constant variables must be assigned a value when declared. If you try to declare a const variable without a value, you’ll get a SyntaxError
+const userName = "Mary";
+console.log(userName);
+
+// 3. let: the let keyword was introduced in ES6. The let keyword signals that the variable can be reassigned a different value. When using let and var we can declare a variable without assigning the variable a value. In such a case, the variable will be automatically initialized with a value of undefined.
+let phoneBrand = "Samsung";
+console.log(phoneBrand);
+
+
+
+
+//Adding Strings
+
+// 1. String Concatenation: The + operator can be used to combine two string values even if those values are being stored in variables
+let playerscore = 50;
+console.log("Great Job! You scored "+(playerscore)+" points.");
+
+// 2. String Interpolation: Template Literals
+// we can insert, or interpolate, variables into strings using template literals. A template literal is wrapped by backticks with the variable wrapped in curly brackets `${()}`
+let playerscore2 = 65;
+console.log(`Great Job! You scored ${(playerscore2)} points.`);

@@ -159,6 +159,30 @@ console.log(phoneBrand);
 
 
 
+// Mathematical Assignment Operators: can use variables and built-in mathematical operators to calculate new values and assign them to a variable. 
+//  (+=; -=; *=; & /=)
+let num=5;
+num = num+1;
+console.log(num);
+
+//can be rewritten as
+num+=1;
+console.log(num);
+
+
+
+// The Increment and Decrement Operator: (commonly used in loops)
+// 1. ++ the increment operator will increase the value of the variable by 1.
+let childAge = 15;
+childAge++;
+console.log(childAge);
+
+// 2. -- The decrement operator will decrease the value of the variable by 1.
+let bankBalance = 556;
+--bankBalance;
+console.log(bankBalance);
+
+
 //Adding Strings
 
 // 1. String Concatenation: The + operator can be used to combine two string values even if those values are being stored in variables

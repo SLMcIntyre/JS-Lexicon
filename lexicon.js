@@ -67,4 +67,26 @@ console.log(dogInfo);
 console.log(`dogInfo Data Type is an ${typeof (dogInfo)}`);
 
 
-//Arithmetic Operators
+//Arithmetic Operators: 
+// An operator is a character that performs a task in our code. JavaScript has several built-in in arithmetic operators, that allow us to perform mathematical calculations on numbers.
+
+// 1. Add: +
+let sum = 5+10;
+console.log(`The sum of 5 & 10 is ${(sum)}.`);
+
+// 2. Subtract: -
+let difference = 55-20;
+console.log(`The difference between 55 & 20 is ${(difference)}.`);
+
+// 3. Multiply: *
+let product = 10*2;
+console.log(`The product of 10 multiplied by 2 is ${(product)}.`);
+
+// 4. Divide: /
+let quotient = 10/5;
+console.log(`The quotient of 10 divided by 5 is ${(quotient)}.`);
+
+// 5. Remainder or Modulo/Modulus: %
+// The remainder operator, sometimes called modulo, returns the number that remains after the right-hand number divides into the left-hand number as many times as it evenly can: 11 % 3 equals 2 because 3 fits into 11 three times, leaving 2 as the remainder.
+let modulo = 11%3;
+console.log(`The remainder of 11 modulo 3 is ${(modulo)}.`);
